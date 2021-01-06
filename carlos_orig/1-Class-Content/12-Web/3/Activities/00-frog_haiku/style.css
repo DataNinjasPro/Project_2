@@ -1,0 +1,35 @@
+.blueline {
+    color: blue;
+}
+
+.greenline {
+    color: green;
+}
+
+.boldline {
+    font-weight: bold;
+}
+
+.smallfont {
+    font-size: 12px;
+}
+
+.borderbox {
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    padding-left: 20px;
+}
+
+.frogimg {
+    width: 75%;
+    float: left;
+}
+
+.clearfix:after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }

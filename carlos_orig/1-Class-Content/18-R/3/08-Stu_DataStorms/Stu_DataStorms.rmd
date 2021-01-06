@@ -1,0 +1,18 @@
+# Read data from `data_storms.tsv`
+mystorms <- read_tsv("Data_Storms.tsv")
+
+# Make a table of how many days per month had a category 3+ storm before 1990
+
+# Make a table of how many days per month had a category 3+ storm during and after 1990
+
+# From the storms dataset in dplyr (dplyr::storms) give the median pressure and the range
+#   of pressures for each year
+
+# Give the mean and meadian pressure by year and name for only hurricanes
+
+# Generate a tibble for each of the following: year, status counting each unique name
+
+# Give the number of category 4+ storms that have happened each year and 
+#  the average month per year that a category 4+ hurricane has happened
+#    Take into account the days and hours of the of the month when accounting for 
+#    the mean month of the storms.

@@ -1,0 +1,43 @@
+---
+title: "Cotton GE Crops"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(plotly)
+```
+
+#### Read TSV file
+```{r Read Data, include=FALSE}
+
+```
+#### Preview Tibble
+```{r}
+
+```
+
+#### Gather years columns into a single column
+```{r Gather Data, include=TRUE}
+
+```
+
+#### Preview gathered tibble
+```{r}
+
+```
+
+#### Filter Tibble for insect-resistant GMO type
+```{r Insect Resistant, include=TRUE}
+
+```
+
+#### Filter Tibble for herbicide-resistant GMO Type
+```{r Herbicide Tolerant Tibble, include=TRUE}
+
+```
+
+```{r Create Plots, include=TRUE}
+
+
+```
