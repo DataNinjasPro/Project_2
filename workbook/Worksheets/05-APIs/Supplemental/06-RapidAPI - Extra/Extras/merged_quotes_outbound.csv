@@ -1,0 +1,17 @@
+QuoteId,MinPrice,Direct,OutboundLeg,QuoteDateTime,CarrierIds,OriginId,DestinationId,DepartureDate
+1,613,False,"{'CarrierIds': [1464], 'OriginId': 73076, 'DestinationId': 42795, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-14T17:48:00,[1464],73076,42795,2021-06-01T00:00:00
+1,315,False,"{'CarrierIds': [1793], 'OriginId': 73076, 'DestinationId': 44759, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-14T16:21:00,[1793],73076,44759,2021-06-01T00:00:00
+2,537,True,"{'CarrierIds': [1218], 'OriginId': 73076, 'DestinationId': 44759, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-14T16:21:00,[1218],73076,44759,2021-06-01T00:00:00
+1,158,False,"{'CarrierIds': [1793], 'OriginId': 73076, 'DestinationId': 60987, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-15T05:16:00,[1793],73076,60987,2021-06-01T00:00:00
+2,191,True,"{'CarrierIds': [870], 'OriginId': 73076, 'DestinationId': 60987, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-15T05:16:00,[870],73076,60987,2021-06-01T00:00:00
+1,91,True,"{'CarrierIds': [1467], 'OriginId': 73076, 'DestinationId': 65363, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-15T03:27:00,[1467],73076,65363,2021-06-01T00:00:00
+1,126,True,"{'CarrierIds': [851], 'OriginId': 73076, 'DestinationId': 65368, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-15T15:18:00,[851],73076,65368,2021-06-01T00:00:00
+1,80,True,"{'CarrierIds': [1467], 'OriginId': 73076, 'DestinationId': 67759, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-13T22:19:00,[1467],73076,67759,2021-06-01T00:00:00
+1,293,False,"{'CarrierIds': [1793], 'OriginId': 73076, 'DestinationId': 43141, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-14T12:50:00,[1793],73076,43141,2021-06-01T00:00:00
+2,654,True,"{'CarrierIds': [1368], 'OriginId': 73076, 'DestinationId': 43141, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-13T20:26:00,[1368],73076,43141,2021-06-01T00:00:00
+1,1057,True,"{'CarrierIds': [1368], 'OriginId': 73076, 'DestinationId': 52337, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-16T05:49:00,[1368],73076,52337,2021-06-01T00:00:00
+1,338,False,"{'CarrierIds': [1760], 'OriginId': 73076, 'DestinationId': 40830, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-16T05:04:00,[1760],73076,40830,2021-06-01T00:00:00
+2,903,True,"{'CarrierIds': [1707], 'OriginId': 73076, 'DestinationId': 40830, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-16T05:04:00,[1707],73076,40830,2021-06-01T00:00:00
+1,172,False,"{'CarrierIds': [1793], 'OriginId': 73076, 'DestinationId': 40065, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-13T13:53:00,[1793],73076,40065,2021-06-01T00:00:00
+2,307,True,"{'CarrierIds': [1793], 'OriginId': 73076, 'DestinationId': 40065, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-13T13:53:00,[1793],73076,40065,2021-06-01T00:00:00
+1,105,True,"{'CarrierIds': [1793], 'OriginId': 73076, 'DestinationId': 47009, 'DepartureDate': '2021-06-01T00:00:00'}",2021-01-16T02:56:00,[1793],73076,47009,2021-06-01T00:00:00
