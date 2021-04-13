@@ -1,2 +1,1 @@
-# The_Hive
-Where the bees live
+# Project 2
