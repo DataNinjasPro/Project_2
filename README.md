@@ -2,9 +2,9 @@
 
 # Todo
 
-- [ ] Data = API of some sort.
-  - [ ] Set up an API that collects data for us.
-  - [ ] Preprocess the data
+- [ X ] Data = API of some sort.
+  - [ X ] Set up an API that collects data for us.
+  - [ X ] Preprocess the data
     - [ ] Get rid of any unnecessary data.
 - [ ] Strategy Creation.
   - [ ] Create a strategy that does well in bull markets.
