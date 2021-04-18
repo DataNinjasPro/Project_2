@@ -14,9 +14,11 @@ def preprocess(ticker):
     # Note: We could have period < 60d and an intraday return
     # Just change period to < 60 days and add interval = 1h
     df = yf.download(ticker,
-                     period='5y',  # A period of 2 years from today
+                     period='15y',  # A period of 2 years from today
                      prepost=True,  # Pre and Post markets included
-                     threads=True  # Multi-thread processing for faster output.
+                     threads=True,
+                     # Multi-thread processing for faster output.
+                     interval="1d"
                      )
     df  # This data already looks like it is based of business days.
     # Rearranging the columns to help with the Heatmap
