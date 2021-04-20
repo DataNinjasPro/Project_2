@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
+# A function that brings in stock data from yfinance.
+
 
 def download(ticker, period, interval, prepost):
     # Note: We could have period < 60d and an intraday return
@@ -17,6 +19,8 @@ def download(ticker, period, interval, prepost):
                      threads=True,
                      interval=interval)
     return df
+
+# A function that returns both the Cumulative Returns and the dataframe with those returns.
 
 
 def returns(df):
@@ -41,6 +45,8 @@ def returns(df):
     returns = df1[['log_returns', 'strategy_returns']
                   ].sum().apply(np.exp) * 1000
     return df1, returns
+
+# Plots the cumulative returns.
 
 
 def plot_returns(df):
