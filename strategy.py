@@ -49,8 +49,8 @@ def returns(df):
 # Plots the cumulative returns.
 
 
-def plot_returns(df):
+def historic_cumulative_returns(df):
     df['BH CR'] = df['log_returns'].cumsum().apply(np.exp) * 1000
     df['S CR'] = df['strategy_returns'].cumsum().apply(np.exp) * 1000
 
-    return df[['BH CR', 'S CR']].plot()
+    return df[['BH CR', 'S CR']]
