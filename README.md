@@ -20,10 +20,10 @@ First, we get a prediction of the future asset price from our model. Based off o
 
 Our model' performance is not guaranteed and is not consistent. That said, when it doesn't do well, it isn't usually much worse than the buy and hold strategy in the short run. Meaning, we didn't see very many cases where an investor would've lost their shirt running this strategy. However, when our model does do well, it really can do an amazing job. For example, if you gave our model $1,000 around the end of January 2021 and set it loose on GameStop (GME), you would have ended up with $57,052 in 60 days. Compare that to the buy and hold strategy which would've returned $1,952. Now it should be said that this case is an extreme outlier and should not be the expected result. Like said before, it's ideal use would be a risk limiter use in combination WITH the buy and hold strategy that could result in less money lost.
 
-![GME Cumulative Returns](IMG/GME_Cumulative_returns.png)
+![GME Cumulative Returns](IMGS/GME_Cumulative_returns.png)
 
 The following picture represents the intended use for this strategy. That is, a loss mitigator. An investor would've lost more money in this 60 day period if they were to have only bought and held. Don't mistake this "bigger loss" with an overall bigger loss. The investor, depending on when they actually bought, could still have a higher return if the bought the stock 50 years ago. But in this short period, they could've reduced the loss incurred in the 60 day period if the employed this strategy.
-![Expected Outcome](IMG/TSLA_expected_outcome.png)
+![Expected Outcome](IMGS/TSLA_expected_outcome.png)
 
 # Conclusion
 
