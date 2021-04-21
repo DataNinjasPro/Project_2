@@ -1,14 +1,19 @@
-#!/usr/bin/python3
-
-# figure out how to feed one function to the other.
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
+import numpy as np
+from numpy.random import seed
+seed(1)
+from tensorflow import random
+random.set_seed(2)
+import pandas as pd
+import matplotlib.pyplot as plt
 
-
-def window_data(df, window, feature_col_number, target_col_number):
+def window_data(df, window):
     X = []
     y = []
+    feature_col_number = 0 
+    target_col_number = 0
     for i in range(len(df) - window - 1):
         features = df.iloc[i:(i + window), feature_col_number]
         target = df.iloc[(i + window), target_col_number]
@@ -17,15 +22,7 @@ def window_data(df, window, feature_col_number, target_col_number):
     return np.array(X), np.array(y).reshape(-1, 1)
 
 
-def CreatingTheModel(FIgure out how to get window data here):
-
-    window_size = 10
-
-    # Column index 0 is the 'fng_value' column
-    # Column index 1 is the `Close` column
-    feature_column = 2  # Close
-    target_column = 2
-    X, y = window_data(df, window_size, feature_column, target_column)
+def CreatingTheModel(X,y):
 
     split = int(0.80 * len(X))
     X_train = X[: split]
@@ -65,25 +62,25 @@ def CreatingTheModel(FIgure out how to get window data here):
     model.add(Dense(1))
 
     model.compile(optimizer="adam", loss='mse', metrics=['mse'])
+    model.summary()
+    model.fit(X_train, y_train, epochs=3,shuffle=False, batch_size=1, verbose=0)
 
-    model_fit = model.fit(X_train, y_train, epochs=80,
-                          shuffle=False, batch_size=1, verbose=0)
     model.evaluate(X_test, y_test)
 
-    return model_fit
+    return model , X_test ,scaler ,y_test
 
 
-def PredictWithModel(model_fit, X_test):
+def PredictWithModel(model, X_test,scaler,y_test):
     predicted = model.predict(X_test)
     predicted_prices = scaler.inverse_transform(predicted)
     real_prices = scaler.inverse_transform(y_test.reshape(-1, 1))
     return predicted_prices, real_prices
 
 
-def PlotPrediction(predicted_prices, real_prices):
+def PlotPrediction(predicted_prices, real_prices,df):
     stocks = pd.DataFrame({
         "Actual": real_prices.ravel(),
         "Predicted": predicted_prices.ravel()
     }, index=df.index[-len(real_prices):])
 
-    return stocks.plot(title="Aint worth shit. But damn. Ain't it pretty", figsize=(30, 10))
+    return stocks.plot(title="Aint worth shit. But damn. Ain't it pretty", figsize=(30, 10),secondary_y = 'Predicted')
